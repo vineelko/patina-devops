@@ -245,7 +245,7 @@ group:
 
 # Rust Configuration - Rust Toolchain
   - files:
-    - source: .sync/rust/rust-toolchain.toml
+    - source: .sync/rust/Toolchains/rust-toolchain.toml
       dest: rust-toolchain.toml
     repos: |
       OpenDevicePartnership/patina
@@ -255,6 +255,11 @@ group:
       OpenDevicePartnership/patina-mtrr
       OpenDevicePartnership/patina-paging
       OpenDevicePartnership/patina-qemu
+
+  - files:
+    - source: .sync/rust/Toolchains/rust-toolchain-patina-readiness-tool.toml
+      dest: rust-toolchain.toml
+    repos: |
       OpenDevicePartnership/patina-readiness-tool
 
 # Rust Configuration - Rustfmt
